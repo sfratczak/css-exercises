@@ -33,6 +33,9 @@ body {
 
 .content {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul {
@@ -53,6 +56,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
