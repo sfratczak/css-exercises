@@ -27,6 +27,7 @@ body {
 }
 
 .middle {
+  flex: 1;
   display: flex;
 }
 
@@ -44,21 +45,26 @@ body {
 }
 
 .sidebar li {
-  height: 24px;
+  margin-bottom: 16px;
 }   
 
 .sidebar a {
   text-decoration: none;
+  font-size: 24px;
   color: white;
 }
 
 .article {
   display: flex;
-  /* flex: 1 1 auto; */
+  flex-wrap: wrap;
+  padding: 32px;
+  gap: 32px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 275px;
+  padding: 16px;
 }
