@@ -5,6 +5,9 @@
 
 .container {
   text-align: center;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
 }
 
 .container div {
@@ -17,15 +20,31 @@
 
 .header {
   background-color: #393f4d;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.logo {
+  text-align: left;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style-type: none;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  height: 100%;
+  align-items: center;
+  justify-content: end;
 }
 
 .sidebar {
-  background-color: #FF7755;
+  background-color: #ff7755;
 }
 
 .sidebar .photo {
@@ -36,7 +55,6 @@
   border-radius: 10px;
 }
 
-
 .sidebar .side-content {
   background-color: white;
   color: black;
@@ -45,7 +63,7 @@
 }
 
 .nav {
-  background-color: #FF7755;
+  background-color: #ff7755;
 }
 
 .nav ul li {
@@ -65,7 +83,7 @@
 }
 
 .article .card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: black;
   text-align: center;
 }
@@ -87,5 +105,5 @@
 
 .footer p {
   font-size: 13px;
-  font-weight: normal;  
+  font-weight: normal;
 }
