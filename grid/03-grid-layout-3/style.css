@@ -53,6 +53,11 @@
   gap: 50px;
 }
 
+.sidebar > div {
+  display: grid;
+  align-items: center;
+}
+
 .sidebar .photo {
   background-color: white;
   color: black;
