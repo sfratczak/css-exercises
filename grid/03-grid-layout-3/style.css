@@ -77,9 +77,15 @@
   background-color: #ff7755;
 }
 
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .article {
